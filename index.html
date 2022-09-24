@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/pages/home/style.css" />
+    <link rel="stylesheet" href="/styles/profileCard.css">
+    <title>TechPosters - Home</title>
+  </head>
+  <body>
+    <header class="nav">
+      <nav class="nav-wrapper">
+        <img class="logo" src="/assets/img/logo.svg" alt="">
+        <p class="login">Sair</p>
+      </nav>
+    </header>
+    <main>
+      <section class="top-content-wrapper">
+        <aside class="to-post">
+          <input type="text" class="to-post-title">
+          <textarea name="" id="" cols="30" rows="10" class="to-post-content"></textarea>
+          <button type="submit" class="to-post-btn">Postar</button>
+        </aside>
+        <aside class="follow-bar">
+          <h2 class=follow-title">Sugestões para você seguir</h2>
+          <ul class="follow-wrapper"></ul>
+        </aside>
+      </section>
+      <section class="posts-wrapper">
+        <h1>Posts</h1>
+        <ul class="posts"></ul>
+      </section>
+    </main>
+  </body>
+  <script src="/script/database/users.js"></script>
+  <script src="/script/database/posts.js"></script>
+  <script src="/script/database/sugestUsers.js"></script>
+  <script src="/pages/home/index.js"></script>
+</html>
