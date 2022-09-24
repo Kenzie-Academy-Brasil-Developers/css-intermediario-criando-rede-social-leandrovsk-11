@@ -11,6 +11,8 @@
     --color-primary:#4263EB;
     --color-secondary:#364FC7;
 
+    --color-primary-faded:#EDF2FF;
+
     --color-gray-0: #0A0C0D;
     --color-grey-1: #212529;
     --color-grey-2: #495057;
@@ -21,6 +23,7 @@
     --grey-opacity-1: rgba(33,37,41,0.5);
     
     --radius-1: 0.25rem;
+    --radius-2: 4px;
 
     --font-family-1: "Inter", sans-serif;
     --font-family-2: "Nunito", sans-serif;

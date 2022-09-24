@@ -4,7 +4,6 @@ let topContent = document.querySelector(".to-post");
 let followContent = document.querySelector(".follow-wrapper");
 let posts_area = document.querySelector(".posts");
 
-
 function renderUserCard(obj) {
   let span = document.createElement("span");
   let figure = document.createElement("figure");
@@ -56,6 +55,18 @@ function renderFolloUsersBar(usersIdArr) {
         let follow_btn = document.createElement("button");
         follow_btn.innerText = "Seguir";
         follow_btn.classList.add("follow-btn");
+        follow_btn.id = "follow-btn";
+
+        follow_btn.addEventListener("click", function () {
+          let follow = follow_btn.classList.toggle("follow-btn");
+          follow_btn.classList.toggle("follow-true");
+          if (follow) {
+            follow_btn.innerText = "Seguir";
+          } else {
+            follow_btn.innerText = "Seguindo";
+          }
+        });
+
         li.appendChild(userCard);
         li.appendChild(follow_btn);
         followContent.appendChild(li);
@@ -78,8 +89,8 @@ function renderPosts(postsArr) {
 
         h2.innerText = postsArr[obj].title;
         p.innerText = postsArr[obj].text;
-      
-        let usercard = renderUserCard(users[user])
+
+        let usercard = renderUserCard(users[user]);
 
         li.appendChild(usercard);
         li.appendChild(h2);
@@ -90,6 +101,10 @@ function renderPosts(postsArr) {
   }
 }
 
-renderLoggedUserCard(loggedUserId);
-renderFolloUsersBar(sugestUsers);
-renderPosts(posts);
+function renderSite() {
+  renderLoggedUserCard(loggedUserId);
+  renderFolloUsersBar(sugestUsers);
+  renderPosts(posts);
+}
+
+renderSite();

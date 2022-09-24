@@ -1,9 +1,9 @@
 
 main {
-   padding: 0 var(--lateral-padding);
-   width: 1400px;
-   max-width: 100%;
    margin: 0 auto;
+   position: relative;
+   top: 50px;
+   z-index: 0;
 }
 
 .top-content-wrapper {
@@ -12,20 +12,25 @@ main {
    justify-content: space-between;
    width: 100%;
    gap: 30px;
+   flex-wrap: wrap;
 }
 
 .nav {
-   width: 100vw;
    background-color: var(--color-grey-1);
+   width: 100%;
+   position: fixed;
+   z-index: 1;
 }
 
 .nav-wrapper {
-   padding: var(--vertical-padding) var(--lateral-padding);
+   padding: var(--vertical-padding) 16px;
    max-width: 100%;
    display: flex;
    align-items: center;
    justify-content: space-between;
    margin: 0 auto;
+   top: 100px;
+   
 }
 
 .logo {
@@ -50,6 +55,9 @@ main {
    width: 713px;
    height: 52px;
    max-width: 100%;
+   border-radius: var(--radius-2);
+   border: 2px solid var(--color-grey-4);
+   outline: 0;
 }
 
 .to-post-content {
@@ -57,7 +65,9 @@ main {
    height: 130px;
    max-width: 100%;
    resize: none;
-
+   border-radius: var(--radius-2);
+   border: 2px solid var(--color-grey-4);
+   outline: 0;
 }
 
 .to-post-btn {
@@ -98,13 +108,32 @@ main {
    padding: 0 12px;
    cursor: var(--cursor);
    border: 1px solid var(--color-grey-1);
+   font-weight: var(--font-weight-title2);
+}
+
+.follow-btn:hover {
+   background-color: var(--color-primary-faded);
+   border-color: var(--color-primary);
+   color: var(--color-primary);
+   font-weight: var(--font-weight-title2);
+}
+
+.follow-true {
+   height: 28px;
+   background-color: var(--color-primary);
+   color: var(--color-white-fixed);
+   border-radius: 2px;
+   padding: 0 12px;
+   cursor: var(--cursor);
+   border: 0;
+   font-weight: var(--font-weight-title2);
 }
 
 .posts-wrapper {
    padding-top: 36px;
    width: 713px;
    max-width: 100%;
-   margin-bottom: 40px;
+   margin-bottom: 100px;
 }
 
 .posts-wrapper h1 {
@@ -121,4 +150,23 @@ main {
    display: flex;
    flex-direction: column;
    gap: 20px;
+}
+
+.post-title {
+   font-size: var(--font-size-title1);
+   line-height: var(--line-height-title1);
+}
+
+.post-content{
+   font-size: var(--font-size-text1);
+   line-height: var(--line-height-text1);
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   overflow: hidden;
+}
+
+.container {
+   width: 1200px;
+   max-width: 100%;
 }
