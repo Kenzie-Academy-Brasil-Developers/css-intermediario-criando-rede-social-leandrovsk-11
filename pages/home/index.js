@@ -98,7 +98,7 @@ function renderFolloUsersBar(usersIdArr) {
         });
 
         li.appendChild(userCard);
-        liModal.innerHTML = li.innerHTML;
+        liModal = li.cloneNode(true);
         li.appendChild(follow_btn);
         liModal.appendChild(follow_btn2);
         modalFollow.appendChild(liModal);
