@@ -276,6 +276,7 @@ menu {
    flex-direction: column;
    width: 760px;
    height: fit-content;
+   max-height: 90%;
    max-width: 90%;
    background-color: var(--color-white-fixed);
    border-radius: 8px;
