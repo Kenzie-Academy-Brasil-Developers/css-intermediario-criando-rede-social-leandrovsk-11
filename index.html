@@ -10,24 +10,39 @@
     <title>TechPosters - Home</title>
   </head>
   <body>
+    <div class="modal-wrapper hidden">
+      <span class="modal">
+        <button class="close-modal">X</button>
+      <ul class="modal-follow"></ul>
+      </span>
+    </div>
+    <div class="post-modal-wrapper hidden">
+      <span class="post-modal">
+        <button class="close-post-modal">X</button>
+        <span class="posts-modal">
+          
+        </span>
+      </span>
+    </div>
     <header class="nav">
       <nav class="nav-wrapper container">
         <img class="logo" src="/assets/img/logo.svg" alt="">
-        <p class="login">Sair</p>
+        <menu>
+          <p class="open-follow">Seguir</p>
+          <p class="login">Sair</p>
+        </menu>
       </nav>
     </header>
-    <main class="container">
-      <section class="top-content-wrapper">
-        <aside class="to-post">
-          <input type="text" class="to-post-title">
-          <textarea name="" id="" cols="30" rows="10" class="to-post-content"></textarea>
-          <button type="submit" class="to-post-btn">Postar</button>
-        </aside>
-        <aside class="follow-bar">
-          <h2 class=follow-title">Sugestões para você seguir</h2>
-          <ul class="follow-wrapper"></ul>
-        </aside>
-      </section>
+    <main class="container wrapper">
+      <aside class="to-post">
+        <input type="text" class="to-post-title">
+        <textarea name="" id="" cols="30" rows="10" class="to-post-content"></textarea>
+        <button type="submit" class="to-post-btn">Postar</button>
+      </aside>
+      <aside class="follow-bar">
+        <h2 class=follow-title">Sugestões para você seguir</h2>
+        <ul class="follow-wrapper"></ul>
+      </aside>
       <section class="posts-wrapper">
         <h1>Posts</h1>
         <ul class="posts"></ul>
