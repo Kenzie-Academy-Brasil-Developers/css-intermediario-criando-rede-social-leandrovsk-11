@@ -48,6 +48,7 @@
    width: 760px;
    height: fit-content;
    max-width: 90%;
+   max-height: 90%;
    background-color: var(--color-white-fixed);
    border-radius: 8px;
    padding: 10px;
