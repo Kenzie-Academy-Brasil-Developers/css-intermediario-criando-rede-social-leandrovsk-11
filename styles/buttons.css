@@ -20,6 +20,7 @@
   padding: 0 12px;
   cursor: var(--cursor);
   border: 1px solid var(--color-grey-1);
+  color: var(--color-grey-1);
   font-weight: var(--font-weight-title2);
 }
 

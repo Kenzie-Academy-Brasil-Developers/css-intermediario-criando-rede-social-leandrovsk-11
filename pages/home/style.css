@@ -45,8 +45,19 @@ menu {
   padding-bottom: 100px;
 }
 
+.posts-title{
+  font-weight: var(--font-weight-title1);
+  font-size: var(--font-size-title1);
+}
+
 .follow-wrapper {
   gap: 61px;
+}
+
+.follow-title {
+  font-weight: var(--font-weight-title2);
+  font-size: var(--font-size-title2);
+  color: var(--color-grey-1);
 }
 
 .to-follow {
@@ -87,11 +98,13 @@ menu {
 .post-title {
   font-size: var(--font-size-title1);
   line-height: var(--line-height-title1);
+  color: var(--color-grey-1);
 }
 
 .post-content {
   font-size: var(--font-size-text1);
   line-height: var(--line-height-text1);
+  color: var(--color-grey-2);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;

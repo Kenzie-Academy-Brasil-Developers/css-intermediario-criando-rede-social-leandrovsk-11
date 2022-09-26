@@ -12,7 +12,11 @@
 }
 .profile-name {
    font-size: var(--font-size-title2);
+   font-weight: var(--font-weight-title2);
+   color: var(--color-grey-1);
 }
 .profile-job {
    font-size: var(--font-size-text2);
+   font-weight: var(--font-weight-text);
+   color: var(--color-grey-2);
 }
