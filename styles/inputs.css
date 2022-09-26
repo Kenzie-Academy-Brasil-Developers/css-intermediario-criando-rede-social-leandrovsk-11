@@ -1,19 +1,23 @@
 .to-post-input {
-   max-width: 100%;
-   border-radius: var(--radius-2);
-   border: 2px solid var(--color-grey-4);
-   outline: 0;
-   padding: 10px;
-   font-size: var(--font-size-text1);
-   font-family: var(--font-family-1);
-   color: var(--color-grey-2);
+  max-width: 100%;
+  border-radius: var(--radius-2);
+  border: 2px solid var(--color-grey-4);
+  outline: 0;
+  padding: 10px;
+  font-size: var(--font-size-text1);
+  font-family: var(--font-family-1);
+  color: var(--color-grey-2);
+}
+
+.to-post-input:focus {
+  border: 2px solid var(--color-primary);
 }
 
 .to-post-title {
-   height: 52px;
- }
- 
- .to-post-content {
-   height: 130px;
-   resize: none;
- }
+  height: 52px;
+}
+
+.to-post-content {
+  height: 130px;
+  resize: none;
+}
