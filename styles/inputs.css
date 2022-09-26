@@ -9,6 +9,10 @@
   color: var(--color-grey-2);
 }
 
+.to-post-input::placeholder {
+  color: var(--color-grey-3);
+}
+
 .to-post-input:focus {
   border: 2px solid var(--color-primary);
 }
@@ -21,3 +25,5 @@
   height: 130px;
   resize: none;
 }
+
+
