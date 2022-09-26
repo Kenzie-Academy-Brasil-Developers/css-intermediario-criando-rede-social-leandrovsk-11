@@ -9,6 +9,16 @@
   align-self: flex-end;
 }
 
+.to-post-btn-unable {
+  width: 69px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: var(--color-grey-4);
+  border: 0;
+  color: var(--color-grey-3);
+  align-self: flex-end;
+}
+
 .to-post-btn:hover {
   background-color: var(--color-secondary);
 }

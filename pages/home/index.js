@@ -8,10 +8,12 @@ let openFollow = document.querySelector(".open-follow");
 let modalFollow = document.querySelector(".modal-follow");
 let modalWrapper = document.querySelector(".modal-wrapper");
 let closeModalFollow = document.querySelector(".close-follow");
-let postBtn = document.querySelector(".to-post-btn");
+let postBtn = document.querySelector("#to-post-btn");
 let postModalWrapper = document.querySelector(".post-modal-wrapper");
 let postModal = document.querySelector(".posts-modal");
 let closePostModal = document.querySelector(".close-post")
+let checkTitle = document.querySelector(".to-post-title")
+let checkInput = document.querySelector(".to-post-content")
 
 function renderUserCard(obj) {
   let span = document.createElement("span");
@@ -198,9 +200,7 @@ function callEvents() {
     let postTitle = event.target.parentElement.children[1].value;
     let postContent = event.target.previousElementSibling.value;
 
-    if (postTitle === "" || postContent === "") {
-      alert("Campo Vazio!");
-    } else {
+   if(postBtn.classList.contains('to-post-btn')) {
       let newId = posts[posts.length - 1].id_post + 1;
 
       let newPost = {
@@ -215,8 +215,31 @@ function callEvents() {
 
       event.target.parentElement.children[1].value = "";
       event.target.previousElementSibling.value = "";
+      postBtn.classList.add('to-post-btn-unable')
+      postBtn.classList.remove('to-post-btn')
     }
   });
+
+  checkInput.addEventListener('input', function() {
+    if(checkTitle.value !== '' && checkInput.value !== '') {
+      postBtn.classList.remove('to-post-btn-unable')
+      postBtn.classList.add('to-post-btn')
+    } else {
+      postBtn.classList.add('to-post-btn-unable')
+      postBtn.classList.remove('to-post-btn')
+    }
+  })
+  
+  checkTitle.addEventListener('input', function() {
+    if(checkTitle.value !== '' && checkInput.value !== '') {
+      postBtn.classList.remove('to-post-btn-unable')
+      postBtn.classList.add('to-post-btn')
+    } else {
+      postBtn.classList.add('to-post-btn-unable')
+      postBtn.classList.remove('to-post-btn')
+    }
+  })
+
 }
 
 function renderSite() {
@@ -227,3 +250,4 @@ function renderSite() {
 }
 
 renderSite();
+
