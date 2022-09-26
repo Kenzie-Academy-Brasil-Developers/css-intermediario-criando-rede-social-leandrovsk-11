@@ -4,53 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/modals.css" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
     <link rel="stylesheet" href="/pages/home/style.css" />
     <link rel="stylesheet" href="/styles/profileCard.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/inputs.css">
     <title>TechPosters - Home</title>
   </head>
   <body>
     <div class="modal-wrapper hidden">
-      <span class="modal">
-        <button class="close-modal">X</button>
-        <ul class="modal-follow"></ul>
+      <span class="modal flex-column">
+        <button class="close-follow modal-btn">X</button>
+        <ul class="modal-follow flex-column"></ul>
       </span>
     </div>
     <div class="post-modal-wrapper hidden">
-      <span class="post-modal">
-        <button class="close-post-modal">X</button>
-        <span class="posts-modal"> </span>
+      <span class="post-modal flex-column">
+        <button class="close-post modal-btn">X</button>
+        <span class="posts-modal flex-column"> </span>
       </span>
     </div>
-    <header class="nav">
-      <nav class="nav-wrapper container">
-        <img class="logo" src="/assets/img/logo.svg" alt="" />
+    <header class="nav-wrapper">
+      <nav class="navbar container">
+        <img class="nav-logo" src="/assets/img/logo.svg" alt="" />
         <menu>
-          <p class="open-follow">Seguir</p>
-          <p class="login">Sair</p>
+          <p class="nav-link open-follow">Seguir</p>
+          <p class="nav-link">Sair</p>
         </menu>
       </nav>
     </header>
     <main class="container wrapper">
-      <aside class="to-post">
-        <input type="text" placeholder="Digitar título do post" class="to-post-title" />
+      <aside class="to-post flex-column">
+        <input type="text" placeholder="Digitar título do post" class="to-post-title to-post-input" />
         <textarea
           name=""
           id=""
           cols="30"
           rows="10"
-          class="to-post-content"
+          class="to-post-content to-post-input"
           placeholder="Digitar descrição do post"
         ></textarea>
         <button type="submit" class="to-post-btn">Postar</button>
       </aside>
-      <aside class="follow-bar">
+      <aside class="follow-bar flex-column">
         <h2 class="follow-title">Sugestões para você seguir</h2>
-        <ul class="follow-wrapper"></ul>
+        <ul class="follow-wrapper flex-column"></ul>
       </aside>
       <section class="posts-wrapper">
         <h1>Posts</h1>
-        <ul class="posts"></ul>
+        <ul class="posts flex-column"></ul>
       </section>
     </main>
   </body>

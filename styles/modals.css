@@ -1,0 +1,68 @@
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+}
+
+.post-modal-wrapper {
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   padding-top: 100px;
+   justify-content: center;
+   position: fixed;
+   z-index: 3;
+ }
+
+.modal-follow {
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  padding-top: 60px;
+}
+
+.modal-follow li {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal {
+  align-items: center;
+  width: 400px;
+  height: 350px;
+  max-width: 90%;
+  background-color: var(--color-white-fixed);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.post-modal {
+   width: 760px;
+   height: fit-content;
+   max-width: 90%;
+   background-color: var(--color-white-fixed);
+   border-radius: 8px;
+   padding: 10px;
+ }
+
+ .posts-modal {
+   width: 100%;
+   height: auto;
+   gap: 32px;
+   padding: 20px;
+   overflow: auto;
+ }
+
+ .modal-post-content {
+   overflow: auto;
+   overflow-wrap: anywhere;
+   line-height: var(--line-height-text1);
+ }

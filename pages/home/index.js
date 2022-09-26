@@ -7,11 +7,11 @@ let like = document.querySelector(".like-img-wrapper");
 let openFollow = document.querySelector(".open-follow");
 let modalFollow = document.querySelector(".modal-follow");
 let modalWrapper = document.querySelector(".modal-wrapper");
-let closeModalFollow = document.querySelector(".close-modal");
+let closeModalFollow = document.querySelector(".close-follow");
 let postBtn = document.querySelector(".to-post-btn");
 let postModalWrapper = document.querySelector(".post-modal-wrapper");
 let postModal = document.querySelector(".posts-modal");
-let closePostModal = document.querySelector(".close-post-modal")
+let closePostModal = document.querySelector(".close-post")
 
 function renderUserCard(obj) {
   let span = document.createElement("span");
@@ -122,6 +122,7 @@ function renderPosts(postsArr) {
         let figcaption = document.createElement("figcaption");
 
         li.classList.add("post");
+        li.classList.add("flex-column")
         h2.classList.add("post-title");
         p.classList.add("post-content");
         span.classList.add("post-foot-wrapper");

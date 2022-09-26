@@ -1,0 +1,62 @@
+.to-post-btn {
+  width: 69px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  border: 0;
+  color: var(--color-white-fixed);
+  cursor: var(--cursor);
+  align-self: flex-end;
+}
+
+.to-post-btn:hover {
+  background-color: var(--color-secondary);
+}
+
+.follow-btn {
+  height: 28px;
+  background-color: transparent;
+  border-radius: 2px;
+  padding: 0 12px;
+  cursor: var(--cursor);
+  border: 1px solid var(--color-grey-1);
+  font-weight: var(--font-weight-title2);
+}
+
+.follow-btn:hover {
+  background-color: var(--color-primary-faded);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-title2);
+}
+
+.open-post-btn {
+  padding: 0 12px;
+  height: 38px;
+  border: 0;
+  background-color: var(--color-grey-1);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-text2);
+  font-weight: var(--font-weight-title2);
+  color: var(--color-white-fixed);
+  cursor: var(--cursor);
+}
+
+.open-post-btn:hover {
+  background-color: var(--color-gray-0);
+}
+
+.modal-btn {
+  position: absolute;
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--color-grey-5);
+  color: var(--color-grey-3);
+  cursor: var(--cursor);
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-title1);
+}
+
