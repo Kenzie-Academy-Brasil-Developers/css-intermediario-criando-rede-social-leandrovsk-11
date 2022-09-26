@@ -5,12 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Login</title>
   </head>
   <body>
-    <main>
-      <form></form>
+    <header class="nav-wrapper">
+      <nav class="navbar container">
+        <img class="nav-logo" src="/assets/img/logo.svg" alt="" />
+        <menu>
+          <p class="nav-selected">Login</p>
+          <p class="nav-link">Registro</p>
+        </menu>
+      </nav>
+    </header>
+    <main class="login-wrapper">
+      <form class="login-form">
+        <h1 class="login-title">Login</h1>
+        <input type="email" name="email" id="email" placeholder="Seu e-mail" class="login-email">
+        <input type="password" name="password" id="password" placeholder="Sua senha" class="login-password">
+        <button class="login-btn">Logar</button>
+        <p class="login-text">Ainda não possui cadastro</p>
+        <button class="redirect-btn" type="button">Ir para página de registro</button>
+      </form>
     </main>
   </body>
   <script src="/script/visualComponents/modal.js"></script>

@@ -15,12 +15,12 @@ menu {
   cursor: default;
 }
 
-.login-wrapper {
+.register-wrapper {
   width: 100vw;
   height: 100vh;
 }
 
-.login-form {
+.register-form {
   margin: 0 auto;
   padding: 40px 24px;
   position: relative;
@@ -36,14 +36,14 @@ menu {
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
 }
 
-.login-title {
+.register-title {
   font-weight: var(--font-weight-title1);
   font-size: var(--font-size-title1);
   line-height: var(--line-height-title1);
   color: var(--color-gray-0);
 }
 
-.login-email {
+.register-email {
   color: var(--color-grey-2);
   font-size: var(--font-size-text1);
   border-radius: var(--radius-2);
@@ -54,7 +54,7 @@ menu {
   outline: none;
 }
 
-.login-password {
+.register-password {
   color: var(--color-grey-2);
   font-size: var(--font-size-text1);
   border-radius: var(--radius-2);
@@ -65,7 +65,7 @@ menu {
   outline: none;
 }
 
-.login-btn {
+.register-btn {
   color: var(--color-white-fixed);
   font-weight: var(--font-weight-title2);
   font-size: var(--font-size-text2);
@@ -78,16 +78,16 @@ menu {
   cursor: var(--cursor);
 }
 
-.login-btn:hover {
+.register-btn:hover {
   background-color: var(--color-secondary);
 }
 
-.login-text {
+.register-text {
   font-size: var(--font-size-text3);
   align-self: center;
 }
 
-.redirect-btn {
+.back-login-btn {
   color: var(--color-grey-1);
   font-weight: var(--font-weight-title2);
   font-size: var(--font-size-text2);
@@ -100,9 +100,65 @@ menu {
   cursor: var(--cursor);
 }
 
-.redirect-btn:hover {
-   background-color: var(--color-primary-faded);
-   border-color: var(--color-primary);
-   color: var(--color-primary);
-   font-weight: var(--font-weight-title2);
- }
+
+.back-login-btn:hover {
+  background-color: var(--color-primary-faded);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-title2);
+}
+
+.register-name {
+  color: var(--color-grey-2);
+  font-size: var(--font-size-text1);
+  border-radius: var(--radius-2);
+  height: 52px;
+  width: 100%;
+  border: 2px solid var(--color-grey-4);
+  padding: 16px 20px;
+  outline: none;
+}
+
+.register-work {
+  color: var(--color-grey-2);
+  font-size: var(--font-size-text1);
+  border-radius: var(--radius-2);
+  height: 52px;
+  width: 100%;
+  border: 2px solid var(--color-grey-4);
+  padding: 16px 20px;
+  outline: none;
+}
+
+.register-profile-picture {
+  color: var(--color-grey-2);
+  font-size: var(--font-size-text1);
+  border-radius: var(--radius-2);
+  height: 52px;
+  width: 100%;
+  border: 2px solid var(--color-grey-4);
+  padding: 16px 20px;
+  outline: none;
+}
+
+.register-title-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.go-back-btn {
+  padding: 0px 12px;
+  height: 28px;
+  border: 1px solid var(--color-grey-1);
+  background-color: transparent;
+  border-radius: 2px;
+  cursor: var(--cursor);
+  font-weight: var(--font-weight-title2);
+}
+
+.go-back-btn:hover {
+  background-color: var(--color-primary-faded);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}

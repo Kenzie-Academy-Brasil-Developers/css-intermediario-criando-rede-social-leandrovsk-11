@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>TechPosters - Cadastro</title>
+  </head>
+  <body>
+    <header class="nav-wrapper">
+      <nav class="navbar container">
+        <img class="nav-logo" src="/assets/img/logo.svg" alt="" />
+        <menu>
+          <p class="nav-link">Login</p>
+          <p class="nav-selected">Registro</p>
+        </menu>
+      </nav>
+    </header>
+    <<main class="register-wrapper">
+      <form class="register-form">
+        <span class="register-title-wrapper">
+          <h1 class="register-title">Cadastro</h1>
+          <button class="go-back-btn" type="button">Voltar</button>
+        </span>
+        <input type="text" name="text" class="register-name" placeholder="Seu nome">
+        <input type="email" name="email" id="email" placeholder="Seu e-mail" class="register-email">
+        <input type="password" name="password" id="password" placeholder="Sua senha" class="register-password">
+        <input type="text" class="register-work" placeholder="Qual o seu trabalho?">
+        <input type="text" class="register-profile-picture" placeholder="URL da imagem de perfil">
+        <button class="register-btn">Registrar</button>
+        <p class="register-text">Já possui login?</p>
+        <button class="back-login-btn" type="button">Ir para página de login</button>
+      </form>
+    </main>
+  </body>
+  <script src="/script/visualComponents/modal.js"></script>
+  <script src="/script/visualComponents/navbar.js"></script>
+  <script src="index.js"></script>
+</html>
